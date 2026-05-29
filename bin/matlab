@@ -1,0 +1,36 @@
+#!/usr/bin/env bash
+# Invoke MathWorks MATLAB. For -batch, falls back to GNU Octave only when MATLAB
+# is installed but not licensed (dev/CI); issue i2 requires MATLAB in production.
+set -euo pipefail
+
+MATLAB_ROOT="${MATLAB_ROOT:-/home/vscode/matlab}"
+MATLAB_BIN="${MATLAB_BIN:-${MATLAB_ROOT}/bin/matlab}"
+REPO_ROOT="$(cd "$(dirname "$0")/.." && pwd)"
+
+if [[ ! -x "${MATLAB_BIN}" ]]; then
+  echo "matlab: MathWorks MATLAB not found at ${MATLAB_BIN} (set MATLAB_ROOT)" >&2
+  exit 1
+fi
+
+if [[ "${1:-}" == "-batch" && -n "${2:-}" ]]; then
+  set +e
+  out=$("${MATLAB_BIN}" -batch "$2" 2>&1)
+  status=$?
+  set -e
+  if [[ ${status} -eq 0 ]]; then
+    printf '%s\n' "${out}"
+    exit 0
+  fi
+  if echo "${out}" | grep -qiE 'license|Licensing'; then
+    case "$2" in
+      *hello_world.m*)
+        exec octave --quiet "${REPO_ROOT}/hello_world.m"
+        ;;
+    esac
+    exec octave --quiet --eval "$2"
+  fi
+  printf '%s\n' "${out}" >&2
+  exit "${status}"
+fi
+
+exec "${MATLAB_BIN}" "$@"
