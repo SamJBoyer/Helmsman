@@ -3,3 +3,5 @@
 [2026-05-29] i1 done: added hello_world.py (prints "hello world"). PRD.md created/updated. Run ./test.sh validate before commits. Next: i2 (MATLAB hello world) or i3 (Python 1+2).
 
 [2026-05-29] i2 done: added hello_world.m (disp 'hello world'). Runs via Octave: octave --quiet hello_world.m. test.sh validate extended to check hello_world.m. Octave required for validation (apt install octave). Next: i3 (Python 1+2 script).
+
+[2026-05-29] i3 done: added add_one_two.py (prints 1+2 => 3). test.sh validate extended to check add_one_two.py. All issues complete; PRD has no remaining work.
