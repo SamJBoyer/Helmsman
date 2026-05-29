@@ -1,0 +1,10 @@
+Find the highest priority feature to work on from issues. Work only on this feature. This feature 
+should be what YOU decide is the highest priority, not necessarily the first on the list.
+- Always use the test to validate the code. 
+- Update the PRD with the work that was done.
+- Append your progress to the @progress.txt  file.
+- Use this to leave a note for the next person working in the codebase.
+- Make a git commit of that feature.
+- Only work on a single feature.
+- If while working you determine the prd is complete, output <promise>COMPLETE</promise>
+- If there is still work to be done, output <promise>INCOMPLETE</promise>

@@ -1,0 +1,4 @@
+increment @progress.txt by 1.
+
+If the value stored in @progress.txt surpasses 5, output <promise>COMPLETE</promise>
+If the value stored in @progress.txt is less than, or equal to, 5, output <promise>INCOMPLETE</promise>
