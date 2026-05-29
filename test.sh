@@ -8,6 +8,17 @@ if [ "${1:-}" = "validate" ]; then
         exit 1
     fi
     echo "validate: hello_world.py OK"
+
+    if ! command -v octave >/dev/null 2>&1; then
+        echo "hello_world.m: octave not found; install Octave to run MATLAB scripts" >&2
+        exit 1
+    fi
+    output=$(octave --quiet hello_world.m 2>&1)
+    if [ "$output" != "hello world" ]; then
+        echo "hello_world.m: expected 'hello world', got '$output'" >&2
+        exit 1
+    fi
+    echo "validate: hello_world.m OK"
     exit 0
 fi
 
