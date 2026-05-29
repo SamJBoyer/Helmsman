@@ -1,0 +1,3 @@
+3
+
+[2026-05-29] i1 done: added hello_world.py (prints "hello world"). PRD.md created/updated. Run ./test.sh validate before commits. Next: i2 (MATLAB hello world) or i3 (Python 1+2).
