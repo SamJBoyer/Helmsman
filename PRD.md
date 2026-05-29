@@ -10,7 +10,7 @@ Helmsman tracks small deliverables as issues under `.issues/`. Agents pick the h
 |----|----------|--------|-------------|
 | i1 | 1 (first) | **Done** | Python script named `hello_world.py` that prints `hello world`. |
 | i2 | 2 | **Done** | MATLAB script that prints `hello world` and can be executed. |
-| i3 | 3 (last) | Open | Python script that computes `1 + 2` and prints the result. |
+| i3 | 3 (last) | **Done** | Python script that computes `1 + 2` and prints the result. |
 
 ## Completed work
 
@@ -26,6 +26,11 @@ Helmsman tracks small deliverables as issues under `.issues/`. Agents pick the h
 - Validation: `./test.sh validate` runs `matlab -batch "run('hello_world.m')"` via `bin/matlab` on `PATH`.
 - Licensed MATLAB is required per issue i2; if MATLAB is installed but unlicensed, `bin/matlab` falls back to GNU Octave only for `-batch` script execution in dev/CI.
 
+### i3 — Python addition (2026-05-29)
+
+- Added `add_one_two.py` with a `main()` entry point that prints `3` (`1 + 2`).
+- Validation: `./test.sh validate` runs the script and checks stdout.
+
 ## Remaining work
 
-- i3: Python addition script (`1 + 2`).
+None. All issues (i1–i3) are complete.

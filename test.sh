@@ -21,6 +21,13 @@ if [ "${1:-}" = "validate" ]; then
         exit 1
     fi
     echo "validate: hello_world.m OK"
+
+    output=$(python3 add_one_two.py)
+    if [ "$output" != "3" ]; then
+        echo "add_one_two.py: expected '3', got '$output'" >&2
+        exit 1
+    fi
+    echo "validate: add_one_two.py OK"
     exit 0
 fi
 
