@@ -1,0 +1,12 @@
+[submodule "AgentHQ"]
+	path = AgentHQ
+	url = https://github.com/SamJBoyer/AgentHQ.git
+[submodule "Skillset"]
+	path = Skillset
+	url = https://github.com/SamJBoyer/Skillset.git
+[submodule "DevContainer"]
+	path = DevContainer
+	url = https://github.com/SamJBoyer/DevContainer.git
+[submodule "MCPKit"]
+	path = MCPKit
+	url = https://github.com/SamJBoyer/MCPKit.git
