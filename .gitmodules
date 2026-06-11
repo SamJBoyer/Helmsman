@@ -1,12 +1,12 @@
 [submodule "AgentHQ"]
-	path = AgentHQ
+	path = modules/harness-builder
 	url = https://github.com/SamJBoyer/AgentHQ.git
 [submodule "Skillset"]
-	path = Skillset
+	path = modules/skills-repo
 	url = https://github.com/SamJBoyer/Skillset.git
 [submodule "DevContainer"]
-	path = DevContainer
+	path = modules/devcontainer
 	url = https://github.com/SamJBoyer/DevContainer.git
 [submodule "MCPKit"]
-	path = MCPKit
+	path = modules/mcp-server
 	url = https://github.com/SamJBoyer/MCPKit.git
