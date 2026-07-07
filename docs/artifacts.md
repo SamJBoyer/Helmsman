@@ -1,0 +1,1 @@
+this project is part of a helmsman repo that has some ambiguous content I might have made before implementing this new strategy. I made this on a new branch called dev. Main has tons of code for guis that I wrote before I actually realized what I wanted to do 

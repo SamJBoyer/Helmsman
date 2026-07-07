@@ -1,1 +1,0 @@
-this is a quick jot. I am trying to use the helmsman technique to implement the helmsman repo. haha.
