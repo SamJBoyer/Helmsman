@@ -1,0 +1,1 @@
+1. structure adds values to ideas 

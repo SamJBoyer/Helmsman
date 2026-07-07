@@ -1,3 +1,0 @@
-DO THIS FIRST! 
-
-Write a python script called "hello world" 

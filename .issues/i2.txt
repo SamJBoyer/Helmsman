@@ -1,3 +1,0 @@
-Do this second! 
-
-Write a matlab script that says "hello world" and execute it. matlab must be used with no alternatives

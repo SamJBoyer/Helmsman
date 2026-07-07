@@ -1,3 +1,0 @@
-Do this last! 
-
-Write a script in python that adds 1 + 2 
