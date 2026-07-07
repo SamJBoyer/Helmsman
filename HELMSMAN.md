@@ -3,15 +3,22 @@ This is project was created with Helmsman. Read every document in @docs/
 
 how to use the documents in docs: 
 
+----
+
 glossary:
 terms: project specific dictionary of important terms used in scope. These terms are to be used aggressively in code to develop a shared language between the agent and developer. terms section of glossary is the ground truth for the definitions
-do: undefined at the moment. we should try to copy this from matt pocock as much as possible 
-do:
-ask if you’re unsure of terms
+
+do: 
+- ask if you’re unsure of terms
 do not:
  - ever add new terms or modify term definitions without asking for explicit permission 
 diagrams: helmsman makes aggressive use of diagrams. lucid chart is the preferred diagram service, and the ground truth diagrams ALWAYS live in lucid chart. NOT IN THIS PROJECT. the diagrams section contains the title of the diagrams, a description of what the diagram contains, a summary of when to refer to the diagram, a link to the lucid chart diagram and any relevant info needed to link from the local repo to the lucid chart ground truth, and a direction to any cached diagrams. 
- i-tags: i-tags stands for issue-tags. issue-tags refer to the tag in the repository git issues page. Helmsman makes heavy use of git issues as a cheap and accessible way to create tickets related to the project. As a result, there are many different tags used to designate which issues mean which thing. For example, issues may be marked as ideas, features, bugs, etc. i-tags may have shared definitions between projects and repo-unique definitions. The i-tag section is the ground truth for what each tag means, which tags are used, and when to use each tag 
+
+---
+
+git-tech: 
+
+A document explaining how agents should use github, what each branches do, and norms around this repo. Always read this before interacting with github
 
  ---
 wants:
@@ -40,3 +47,4 @@ artifacts: previous significant changes stored in a log. this should be used whe
 
 ---
 Ehan document: (everything has a nature): document about higher-level or philosophical thoughts about the nature of the system we’re implementing 
+

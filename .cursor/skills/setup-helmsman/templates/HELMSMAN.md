@@ -1,3 +1,24 @@
+This is project was created with Helmsman. Read every document in @docs/ 
+
+
+how to use the documents in docs: 
+
+----
+
+glossary:
+terms: project specific dictionary of important terms used in scope. These terms are to be used aggressively in code to develop a shared language between the agent and developer. terms section of glossary is the ground truth for the definitions
+
+do: 
+- ask if you’re unsure of terms
+do not:
+ - ever add new terms or modify term definitions without asking for explicit permission 
+diagrams: helmsman makes aggressive use of diagrams. lucid chart is the preferred diagram service, and the ground truth diagrams ALWAYS live in lucid chart. NOT IN THIS PROJECT. the diagrams section contains the title of the diagrams, a description of what the diagram contains, a summary of when to refer to the diagram, a link to the lucid chart diagram and any relevant info needed to link from the local repo to the lucid chart ground truth, and a direction to any cached diagrams. 
+
+---
+
+git-tech: 
+
+A document explaining how agents should use github, what each branches do, and norms around this repo. Always read this before interacting with github
 
  ---
 wants:
