@@ -1,12 +1,33 @@
-This is project was created with Helmsman. Read every document in @docs/ 
+This is project was created with Helmsman. Read every document in @helmsman/ 
 
+helmsman documents have the following documents:
+- glossary 
+- artifacts
+- ehan 
+- git-tech
+- high-level 
+- jot
+- overlay 
+- status
+- questions
+- wants
+- decisions
 
-how to use the documents in docs: 
+NEVER create a new file in the docs folder without EXPLICIT permission. 
+
+how to use each document:
 
 ----
 
 glossary:
 terms: project specific dictionary of important terms used in scope. These terms are to be used aggressively in code to develop a shared language between the agent and developer. terms section of glossary is the ground truth for the definitions
+
+glossary starts with 3 built in categories: 
+- terms: terms and their definition
+- itags: tags used in git issues and their definition
+- elabels: colored emoji squares that demarkate different ideas 
+
+
 
 do: 
 - ask if you’re unsure of terms
@@ -48,3 +69,10 @@ artifacts: previous significant changes stored in a log. this should be used whe
 ---
 Ehan document: (everything has a nature): document about higher-level or philosophical thoughts about the nature of the system we’re implementing 
 
+-------------
+
+Skill policy:
+
+We store our skills in a central repo called Skillet. This repo is a submodule in helmsman, and is cloned to the user/.cursor/skill-set folder so its accessible everywhere. We have a symlink called 
+skillet-link. Skillet has scripts to easily pull the 
+origin. This way, we can modify scripts in our submodule, push them, then call the Skillet/pull-master scripts to sync the changes and make them global
