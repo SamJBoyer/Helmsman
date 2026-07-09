@@ -1,1 +1,1 @@
-this project is part of a helmsman repo that has some ambiguous content I might have made before implementing this new helmsman strategy. I made this on a new branch called dev. Main has tons of code for guis that I wrote before I actually realized what I wanted to do. Check the @git-tech.md, because much stuff isn't relavent 
+Everything in any branch other than dev before the commmit a9dfa2c4017d1f3dbe79ba411ffbced3c5b1226b is an artifact

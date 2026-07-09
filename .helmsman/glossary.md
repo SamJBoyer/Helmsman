@@ -8,6 +8,24 @@ hlabel: stands for helmsman label. Uses colored emojis to mark certain ideas. [ 
 hLabels are available and [X] hLabels are taken. If an hLabel is taken, it needs to have
 a defined name and useage. 
 
+idea pool (iPool): the layer where wants and questions combine to form a critical desire and a critical question. 
+
+critical desire: lives in the iPool. Is a 2 sentence summary of the most important desire the piece of infrastructure will fufill. All wants in the 
+
+critical question: a 2 sentence summary of the fundemental uncertainty that balaces a critical desire
+
+hIdea: an instance of something in the iPool. The h letter stands for helmsman and disambiguates an hIdea from the general word "idea" 
+
+feature pool (fPool): the layer where an hIdea from the iPool becomes a feature. In this layer, we answer questions and build out an implementation strategy
+
+
+
+hLayer: stands from helmsman layers. hLayers are used to describe the various layers of a helmsman project.
+- unstructured thoughts 
+- idea pool (iPool) 
+- object pool (oPool) 
+
+
 ---
 
 # iTags
@@ -26,6 +44,7 @@ wonders: an open curiosity or "I wonder if..." question worth capturing for late
 
 test-needs: a feature that has been added but never tested. marked with the test-needs tag on git issues
 
+ 
 ---
 
 # hLabels
