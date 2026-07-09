@@ -18,7 +18,7 @@ hIdea: an instance of something in the iPool. The h letter stands for helmsman a
 
 feature pool (fPool): the layer where an hIdea from the iPool becomes a feature. In this layer, we answer questions and build out an implementation strategy
 
-
+hVersion: Generally means version of helmsman that was used in this project, or to create this project. 
 
 hLayer: stands from helmsman layers. hLayers are used to describe the various layers of a helmsman project.
 - unstructured thoughts 

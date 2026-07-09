@@ -1,1 +1,0 @@
-This project should be connected to the entire helmsman ecosystem 

@@ -1,5 +1,5 @@
 
-
+diagrams: helmsman makes aggressive use of diagrams. lucid chart is the preferred diagram service, and the ground truth diagrams ALWAYS live in lucid chart. NOT IN THIS PROJECT. the diagrams section contains the title of the diagrams, a description of what the diagram contains, a summary of when to refer to the diagram, a link to the lucid chart diagram and any relevant info needed to link from the local repo to the lucid chart ground truth, and a direction to any cached diagrams. 
 
 Work flow: 
 
@@ -34,14 +34,7 @@ see now a feature log is very useful because i can't remember where the thing th
 ---
 
 Pool 1 
-Helmsman is a unstructured-idea-to-automation developement pipeline. At the top of the funnel we have raw unstructured thoughts that primarily go into "wants" and "questions" 
 
-As we create wants and needs, we start to realize ways wants and questions are interconnected. We move onto the next step: the thought pool, or tPool. In the thought pool we add 
-an object oriented structure where thoughts get their own folder. inside the folder, we create a high-level document that contains a critical desire and a critical question. THe critical desire 
-should, in 2 sentences or less, reflect the core desire this idea resolves. The critical question should, in 2 sentences or less, reflect the core uncertainty about this. These are a balance.
-Next, there is a section of questions and wants. These will often be taken directly from the Pool 1 question and wants. These wants and questions should all be components of the core desire/question. 
-
-Thought pool items either become Objects or can Spawn new Helmsman processes: 
 
 (thought is a bad term for this. its too generic)
 - Thought to an object: 
