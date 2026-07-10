@@ -8,3 +8,8 @@
 4. feature to new project skill 
 5. a skill called find artifcats that scans the repo and sees if there any old terms unrelated to anything or just stuff that simply doesn't make any sense. We can compare this to the chronology to detect artifacts 
 6. the more i use helmsman the more i really want to have those links that connect back to ideas.  
+7. a skill that looks at the current helmsman project wiht its tag and compares that to the tagged canon version to see if drift has occured. this will require defining which documents must be synced to canon and which ones can chage. for example, HELMSMAN.md is synced to canon, but wants and questions don't need to be 
+8. a hook that denies read access when attempting to read jot.md
+9. a hook that denies access when trying to write to anything in hDocs, and will tell the user to specifically ask for permission. should also block write to HELMSMAN.md 
+10. hook. creating a file in hDocs by agents is always blocked 
+11. .cursor should have a junction to helmsman and skills should be stored in helmsman, not the other way around. 

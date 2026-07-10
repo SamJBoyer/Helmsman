@@ -1,0 +1,45 @@
+# Chronology to anthology change
+_Exported on 7/9/2026 at 16:57:55 EDT from Cursor (3.10.17)_
+
+---
+
+**User**
+
+/create-iticket change chronology to anthology
+
+---
+
+**Cursor**
+
+Creating the iticket: validating the itag against the glossary and reading the iticket format.
+
+
+`change` isn’t a valid itag in the glossary. Parsed input:
+
+- **Itag:** `change` (not defined)
+- **Summary:** chronology to anthology
+
+Valid itags: `todos`, `idea`, `feature`, `bug`, `quickssue`, `wonders`, `test-needs`
+
+Which itag should this use? For a terminology rename like chronology → anthology, **`idea`** is the closest fit — say if you want that one (or name another valid itag) and I’ll file the iticket.
+
+---
+
+**User**
+
+great catch. its a quickssue 
+
+---
+
+**Cursor**
+
+Filing the quickssue iticket now.
+
+
+Iticket filed.
+
+- **Local:** `.scratch/.itickets/quickssue/chronology-to-anthology.md`
+- **GitHub:** [#18 — Change chronology to anthology](https://github.com/SamJBoyer/Helmsman/issues/18) (`quickssue` label)
+
+The `quickssue` label was also created on the repo since it didn’t exist yet.
+

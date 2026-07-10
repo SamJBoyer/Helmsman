@@ -13,6 +13,5 @@ hDocs/
 HELMSMAN.md
 AGENTS.md
 
-
 artifacts, jot, overlay, status, question, and wants are empty by default.
-copy the contents of glossary, master, HELMSMAN.md, and AGENTS.md from helmsman_docs
+copy the contents of glossary, master, HELMSMAN.md, and AGENTS.md from helmsman_docs 

@@ -7,3 +7,5 @@ Skill policy:
 We store our skills in a central repo called Skillet. This repo is a submodule in helmsman, and is cloned to the user/.cursor/skill-set folder so its accessible everywhere. We have a symlink called 
 skillet-link. Skillet has scripts to easily pull the 
 origin. This way, we can modify scripts in our submodule, push them, then call the Skillet/pull-master scripts to sync the changes and make them global
+
+Never modify canon without asking 
