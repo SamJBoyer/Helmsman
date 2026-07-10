@@ -1,1 +1,1 @@
-This project contains the core documents about what Helmsman is. Every helmsman project will be based off this project. 
+This project was created with Helmsman. Read .helmsman/hVersion to see the canonical version tag 
