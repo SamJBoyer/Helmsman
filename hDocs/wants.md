@@ -21,3 +21,4 @@
 16. the version control needs to be updated in the canon so it actually pulls from git 
 17. a more durable way of setting up the symlinks because if helmsman moves all the skills blow up.
 18. easy way of migrating projects from the fPool to a new helmsman project  
+19. A way of targting multiple different projects for tickets wihtout having to launch for each. Perhaps this should be a new gui? 
