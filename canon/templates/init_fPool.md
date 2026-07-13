@@ -1,6 +1,16 @@
-if fPool is not in root, create it
+<target-structure>
 
-<content-of-master.md-should-be:>
+root/
+    fPool/
+        [feature-name]
+            - master.md
+            - decisions.md 
+
+</target-structure>
+
+<default-content>
+
+<master.md>
 
 critical desire:
 
@@ -12,10 +22,8 @@ questions:
 
 capabilities
 
-</content-of-master.md-should-be:>
+</master.md>
 
 decisions.md should be empty 
 
-fPool/
-    master.md
-    decisions.md 
+</default-content> 

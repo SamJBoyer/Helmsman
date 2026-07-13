@@ -13,3 +13,11 @@
 9. a hook that denies access when trying to write to anything in hDocs, and will tell the user to specifically ask for permission. should also block write to HELMSMAN.md 
 10. hook. creating a file in hDocs by agents is always blocked 
 11. .cursor should have a junction to helmsman and skills should be stored in helmsman, not the other way around. 
+12. a little digital whiteboard where I can quickly create (todos) and press a little button to get rid of them. perhaps this can be integrated into the greater ticket system 
+    - hey this is a perfect time to use the lateral idea thing. tickets, designation, and automatically ingestion 
+13. brain replacement: it scans the docs and suggests insights like potential new features, lateral connections, improvements, etc. 
+14. we should have a skill called create question that writes the question here, but also automatically links to the spot. 
+15. the tag-hlabel script can't have this big nonsense python script for no reason 
+16. the version control needs to be updated in the canon so it actually pulls from git 
+17. a more durable way of setting up the symlinks because if helmsman moves all the skills blow up.
+18. easy way of migrating projects from the fPool to a new helmsman project  

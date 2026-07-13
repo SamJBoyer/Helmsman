@@ -1,10 +1,12 @@
+<target-structure>
+
+.cursorignore
 .helmsman/
-    .chronology/ 
-    version.md 
+    .chronicle/ 
+    hVersion.md 
 hDocs/
     artifacts.md
     glossary.md
-    jot.md
     master.md
     overlay.md
     questions.md
@@ -12,6 +14,16 @@ hDocs/
     wants.md
 HELMSMAN.md
 AGENTS.md
+jot.md
 
-artifacts, jot, overlay, status, question, and wants are empty by default.
-copy the contents of glossary, master, HELMSMAN.md, and AGENTS.md from helmsman_docs 
+</target-structure>
+
+<instructions>
+
+artifacts, status, questions, wants, and .helmsman/.chronicle are empty by default.
+
+.helmsman/hVersion.md 
+
+copy the contents of glossary, master, HELMSMAN.md, and AGENTS.md, cursorignore, and overlay from helmsman_docs. 
+
+</instructions>

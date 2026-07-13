@@ -50,7 +50,7 @@ test-needs: a feature that has been added but never tested. marked with the test
 
 # hLabels
 
-[ ]: 🔴 #EA4335, [label], [useage]
+[X]: 🔴 #EA4335, Ticket-automation, Ideas refer to the use of itickets and services that automatically ingest and dispatch tickets
 [ ]: 🟠 #FF6D01, [label], [useage]
 [ ]: 🟡 #FBBC04, [label], [useage]
 [ ]: 🟢 #34A853, [label], [useage]

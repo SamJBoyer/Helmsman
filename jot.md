@@ -2,6 +2,8 @@
 
 Work flow: 
 
+Critical-desires can go in the master. Critical questions too. if fPool can become new helmsman projects, we need a place for the unique aspects of fPool
+
 - we start with wants. what do we "want" this project to do for us
 - as we write these wants, these create questions. 
 - as we think of questions, we create answers. these answers must be linked to questions, questions are linked to wants 

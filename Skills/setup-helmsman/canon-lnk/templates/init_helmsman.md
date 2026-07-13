@@ -20,7 +20,7 @@ jot.md
 
 <instructions>
 
-artifacts, overlay, status, questions, wants, and .helmsman/.chronicle are empty by default.
+artifacts, status, questions, wants, and .helmsman/.chronicle are empty by default.
 
 .helmsman/hVersion.md 
 
