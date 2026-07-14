@@ -1,10 +1,6 @@
 1. helmsman should have a clear document structure to place to put every idea 
-8. a gui that makes the creation of these little tickets easier. im getting tired of the cursor window panel 
-9. an automatic process that takes agent-ready itags and 
 10. a way of disambugiating projects when multiple helmsman repos share workspace or scope
 11. a way making a chronical of questions and answers to keep track of problems that I once had, how I solved them. For example, problem 9 "how are skills kept in sync between helmsman project" has been solved and that solution needs to be documented.
-2. add a structure to the iPool 
-3. work trees should be agressivley used to implement new features 
 4. feature to new project skill 
 5. a skill called find artifcats that scans the repo and sees if there any old terms unrelated to anything or just stuff that simply doesn't make any sense. We can compare this to the chronology to detect artifacts 
 6. the more i use helmsman the more i really want to have those links that connect back to ideas.  
@@ -12,13 +8,9 @@
 8. a hook that denies read access when attempting to read jot.md
 9. a hook that denies access when trying to write to anything in hDocs, and will tell the user to specifically ask for permission. should also block write to HELMSMAN.md 
 10. hook. creating a file in hDocs by agents is always blocked 
-11. .cursor should have a junction to helmsman and skills should be stored in helmsman, not the other way around. 
-12. a little digital whiteboard where I can quickly create (todos) and press a little button to get rid of them. perhaps this can be integrated into the greater ticket system 
-    - hey this is a perfect time to use the lateral idea thing. tickets, designation, and automatically ingestion 
 13. brain replacement: it scans the docs and suggests insights like potential new features, lateral connections, improvements, etc. 
 14. we should have a skill called create question that writes the question here, but also automatically links to the spot. 
 15. the tag-hlabel script can't have this big nonsense python script for no reason 
 16. the version control needs to be updated in the canon so it actually pulls from git 
 17. a more durable way of setting up the symlinks because if helmsman moves all the skills blow up.
 18. easy way of migrating projects from the fPool to a new helmsman project  
-19. A way of targting multiple different projects for tickets wihtout having to launch for each. Perhaps this should be a new gui? 

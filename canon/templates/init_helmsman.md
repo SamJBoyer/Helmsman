@@ -24,6 +24,6 @@ artifacts, status, questions, wants, and .helmsman/.chronicle are empty by defau
 
 .helmsman/hVersion.md 
 
-copy the contents of glossary, master, HELMSMAN.md, and AGENTS.md, cursorignore, and overlay from helmsman_docs. 
+copy the contents of glossary, master, HELMSMAN.md, AGENTS.md, cursorignore, and overlay from helmsman_docs. 
 
 </instructions>
