@@ -45,7 +45,9 @@ wonders: an open curiosity or "I wonder if..." question worth capturing for late
 
 test-needs: a feature that has been added but never tested. marked with the test-needs tag on git issues
 
- 
+auto: an automation-related iticket. marked with the auto tag on git issues
+
+
 ---
 
 # hLabels
