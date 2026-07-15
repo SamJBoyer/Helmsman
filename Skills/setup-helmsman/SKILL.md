@@ -6,7 +6,7 @@ disable-model-invocation: true
 
 # Setup Helmsman
 
-Scaffold the Helmsman document structure for a project. Ground truth: [canon-lnk/templates/init_helmsman.md](canon-lnk/templates/init_helmsman.md).
+Scaffold the Helmsman document structure for a project. Ground truth: [canon-lnk/instructions/init_helmsman.md](canon-lnk/instructions/init_helmsman.md).
 
 `canon-lnk` is a junction to the Helmsman canon. Read and copy seeded docs from there; do not read from `canon/` directly.
 
@@ -22,7 +22,7 @@ Task progress:
 
 ### Step 1: Read init_helmsman.md
 
-Read [canon-lnk/templates/init_helmsman.md](canon-lnk/templates/init_helmsman.md) for the directory layout and which files get content vs stay empty. Create the document structure as outlined
+Read [canon-lnk/instructions/init_helmsman.md](canon-lnk/instructions/init_helmsman.md) for the directory layout and which files get content vs stay empty. Create the document structure as outlined
 in init_helmsman.md
 
 ### Step 2: Copy seeded docs from canon-lnk
@@ -54,4 +54,4 @@ List every file created and every file skipped because it already existed.
 
 - Do **not** overwrite a file that already exists. Skip it and report it as skipped.
 - Only the seeded files above get starting content. Every other doc MUST be created empty.
-- Do not invent additional docs beyond [init_helmsman.md](canon-lnk/templates/init_helmsman.md).
+- Do not invent additional docs beyond [init_helmsman.md](canon-lnk/instructions/init_helmsman.md).

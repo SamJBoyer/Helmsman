@@ -1,1 +1,3 @@
-There are many naming and labeling inconsistencies due to changing versions. Until an official version control policy is finished, these will likely stay 
+There are many naming and labeling inconsistencies due to changing versions. Until an official version control policy is finished, these will likely be an issue. 
+Progress is being made towards implementing a consistent version control policy for canon-documents and feeding that through skills. There is limited unchecked ai-bloat 
+at the moment and the issue is missing/inconsistent content not slop.

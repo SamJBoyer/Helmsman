@@ -1,4 +1,6 @@
-# Terms
+<Terms>
+
+<helmsman-terminology>
 
 hDocs: shorthand for helmsman documents. 
 
@@ -6,45 +8,45 @@ itags: itag stands for issue-tags. issue-tags refer to the tag in the repository
 
 iticket: an instance of a git issue that has an itag
 
-hlabel: stands for helmsman label. Uses colored emojis to mark certain ideas. [ ] 
-
-hLabels are available and [X] hLabels are taken. If an hLabel is taken, it needs to have
-a defined name and useage. 
-
-feature pool (fPool): represents the layer where abstract thoughts, wants, and questions can become a speculative feature. Features bring disperate wants and questions under a single umbrella. From there, we add structure by writing a critical desire, a critical question, a list of implementable capabilities. This feature grows until it can be come a prd. 
-
-hFeature: instance of something in the fPool 
+iPool: a document that contains a variably-structured list of thoughts, ideas, questions, and wants. Typically will live inside a lucidchart. Look at hDocs/remotes#lucidchart section to check for a remote iPool document.
 
 critical desire: lives in the fPool. Is a 2 sentence summary of the most important desire the piece of infrastructure will fufill. All wants in the 
 
 critical question: a 2 sentence summary of the fundemental uncertainty that balances a critical desire
 
-hVersion: Generally means version of helmsman that was used in this project, or to create this project. 
+</helmsman-terminology>
 
-hLayer: stands from helmsman layers. hLayers are used to describe the various layers of a helmsman project.
-- unstructured thoughts 
-- idea pool (iPool) 
-- object pool (oPool) 
+<helmsman-version-control>
+
+hVersion: The official version of helmsman currently used in this hProject OR the last official version used in this hProject. hVersion can be checked by looking at .helmsman/hVersion.md which contains the hTag 
+
+hTag: the tag that indicates the hVersion. This matches an official canonical version found in the Helmsman github. The hTag will always be formatted vX.Y.Z and mathces a git tag.
+
+canonical version: an official helmsman release tagged on the github. These releases are finished, polished, and documented to offer a standardized starting point for new helmsman projects and a way to compare drift 
+in an individual hProject to a baseline.
+
+</helmsman-version-control>
+
+<misc-features>
+
+hlabel: stands for helmsman label. Uses colored emojis to mark certain ideas. [ ] 
+
+hLabels are available and [X] hLabels are taken. If an hLabel is taken, it needs to have
+a defined name and useage. 
+
+</misc-features>
 
 
+</Terms>
 ---
 
 # iTags
-
-todos: questions that are turned into things to do. marked with the todo tag on git issues
-
-idea: a rough, unvalidated proposal worth capturing but not yet committed to. marked with the idea tag on git issues
-
-feature: a concrete piece of desired functionality to build. marked with the feature tag on git issues
 
 bug: something that is broken or behaving incorrectly. marked with the bug tag on git issues
 
 quickssue: a quick, low-ceremony issue captured from casual input without deep investigation. marked with the quickssue tag on git issues
 
 wonders: an open curiosity or "I wonder if..." question worth capturing for later exploration, not yet an idea or commitment. marked with the wonders tag on git issues
-
-test-needs: a feature that has been added but never tested. marked with the test-needs tag on git issues
-
  
 ---
 

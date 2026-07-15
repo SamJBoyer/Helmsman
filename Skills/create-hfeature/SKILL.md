@@ -6,7 +6,9 @@ disable-model-invocation: true
 
 # Create hFeature
 
-Scaffold a new hFeature in `fPool/`: a three-word hyphenated folder containing `master.md` (section headers only) and an empty `decisions.md`.
+Scaffold a new hFeature in `fPool/`: a three-word hyphenated folder containing `master.md` (section headers only) and an empty `decisions.md`. Ground truth: [canon-lnk/instructions/init_fPool.md](canon-lnk/instructions/init_fPool.md).
+
+`canon-lnk` is a junction to the Helmsman canon. Read and copy seeded docs from there; do not read from `canon/` directly.
 
 ## Scope — do only this
 
@@ -30,46 +32,52 @@ If the prompt does not contain enough context to pick three meaningful words, as
 
 ## Documents to create
 
-Inside `fPool/<three-word-name>/`:
+Inside `fPool/<three-word-name>/`, follow [init_fPool.md](canon-lnk/instructions/init_fPool.md):
 
 | File | Contents |
 |------|----------|
-| `master.md` | Section headers only — copy from [canon/templates/master.md](canon/templates/master.md) |
+| `master.md` | Section headers only — copy from the `<master.md>` default content in [canon-lnk/instructions/init_fPool.md](canon-lnk/instructions/init_fPool.md) |
 | `decisions.md` | Empty |
 
 ## Workflow
 
 ```
 Task progress:
-- [ ] Step 1: Parse input and derive the three-word folder name
-- [ ] Step 2: Create fPool/ if it does not exist
-- [ ] Step 3: Create the feature folder and documents
-- [ ] Step 4: Report what was created
+- [ ] Step 1: Read init_fPool.md
+- [ ] Step 2: Parse input and derive the three-word folder name
+- [ ] Step 3: Create fPool/ if it does not exist
+- [ ] Step 4: Create the feature folder and documents
+- [ ] Step 5: Report what was created
 ```
 
-### Step 1: Parse input
+### Step 1: Read init_fPool.md
+
+Read [canon-lnk/instructions/init_fPool.md](canon-lnk/instructions/init_fPool.md) for the target structure and default `master.md` / `decisions.md` content.
+
+### Step 2: Parse input
 
 Derive the three-word hyphenated folder name from the user's prompt.
 
-### Step 2: Ensure fPool exists
+### Step 3: Ensure fPool exists
 
 Create `fPool/` at the repo root if it does not exist.
 
-### Step 3: Create the feature folder and documents
+### Step 4: Create the feature folder and documents
 
 Create `fPool/<three-word-name>/` and write:
 
-- `master.md` — copy [canon/templates/master.md](canon/templates/master.md) verbatim
+- `master.md` — copy the `<master.md>` section headers from [init_fPool.md](canon-lnk/instructions/init_fPool.md) verbatim
 - `decisions.md` — create as an empty file
 
-### Step 4: Report
+### Step 5: Report
 
 List the folder and files created with their paths.
 
 ## Constraints
 
+- Always start from [init_fPool.md](canon-lnk/instructions/init_fPool.md).
 - Do **not** overwrite an existing feature folder or its files. If `fPool/<three-word-name>/` already exists, stop and report the conflict.
-- `master.md` MUST contain only the section headers from the template. Do not pre-fill content from the user's prompt.
+- `master.md` MUST contain only the section headers from the instruction default content. Do not pre-fill content from the user's prompt.
 - `decisions.md` MUST be empty.
 - Do not create additional files beyond `master.md` and `decisions.md`.
 - Do not implement, code, or start work on the feature described in the prompt.

@@ -2,11 +2,11 @@
 
 This is a Helmsman project.
 
-Helmsman is an idea-to-product development pipeline designed to facilitate collaboration between developers and agents. Helmsman works by taking basic, unstructured ideas about wants and questions and passing them through multiple layers of structuring until they become actionable. 
+Helmsman is an idea-to-product development pipeline designed to facilitate collaboration between developers and agents. Helmsman follows an ideate -> prototype -> evaluate -> refactor system that starts with creating well robustly structured documents explaining desired-features, questions, internal definitions, multi-project connections, and version-control policies for this project. These documents live in side the hDocs/ folder. 
 
-Helmsman projects have a tag that tells which canon version of the document they're using. Look in the .helmsman/hVersion.md for this version.
+Helmsman projects have a tag that tells which canonical version of the document they're using. Look in the .helmsman/hVersion.md for this version.
 
-HELMSMAN.md should be kept consistent with the canonical tagged version, and glossary.md should have the required sections and terms. 
+Helmsman projects use a concept called iPool (idea pool) which is collection of ideas, wants, desires, and implementations that represents a significant amount of the "purpose" for this hProjets. The iPool may be stored as a file in the repo, but is most often stored in a lucid chart. If the user asks for anything related to the iPool, first check the hDocs/remotes#lucidchart for instructions for accessing the iPool. 
 
 </helmsman-summary>
 
@@ -26,13 +26,10 @@ hDocs/
 - questions.md
 - status.md
 - wants.md
+- remotes.md 
 HELMSMAN.md
 AGENTS.md
 jot.md
-
-Helmsman projects should always be git projects. They should have 2 branches by default:
-- main: branch with the most recent functional project 
-- dev: the branch with active development. Agents merge work trees to the dev branch. Only a human can merge to main, or an agent with explicit permission
 
 NEVER read the jot.md file. This is a human-ONLY file for keeping notes. 
 NEVER edit files in the hDocs folder without EXPLICIT permission. 
@@ -42,15 +39,6 @@ NEVER edit files in the hDocs folder without EXPLICIT permission.
 <documents>
 
 Read every document in hDocs 
-
-hDocs contain the following documents:
-- glossary 
-- artifacts
-- master
-- overlay 
-- status
-- questions
-- wants
 
 How to use each document:
 
@@ -102,5 +90,13 @@ Things I’m not sure about that I want to record
 <artifacts>
 
 Previous significant changes stored in a log. This should be used when weird behavior emerges or it’s unclear why an architectural decision was made, as it might be an artifact from a previous version. This document should be used before looking at git history 
+
+</artifiacts>
+
+<remotes>
+
+Remotes stores information on the which canon information related to this project is stored remotely and how interaction between the local workspace and the remotes takes place.
+
+</remotes>
 
 </documents>

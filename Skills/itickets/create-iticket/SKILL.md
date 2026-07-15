@@ -1,6 +1,6 @@
 ---
 name: create-iticket
-description: Records an itagged issue locally and on GitHub. Use when the user wants to create an iticket, quickssue, idea, feature, or any itagged git issue from casual input. The agent only validates the summary, ensures the itag exists, and files the issue — never implements the ticket.
+description: Records an itagged issue locally and on GitHub for the repo at the agent's working directory only. Use when the user wants to create an iticket from casual issue from casual input. The agent only validates the summary, ensures the itag exists, and files the issue — never implements the ticket. Never file against any other repo.
 disable-model-invocation: true
 ---
 
@@ -8,9 +8,11 @@ disable-model-invocation: true
 
 Record an itagged issue on GitHub and in `.scratch/.itickets/`. Every iticket MUST have exactly one itag.
 
+**Repo lock — working directory only.** You are ONLY ever allowed to create itickets against the git repository at your current working directory. Do not target another repo, remote, fork, org, or path the user mentions. Local files go under this cwd's `.scratch/.itickets/`; `gh issue create` runs with no `--repo` override so it hits this cwd's GitHub remote. If the user asks for a different repo, refuse and tell them to run the skill from that repo's working directory.
+
 ## Scope — do only this
 
-When this skill is invoked, the agent's job is **only** to prepare the itag and push the iticket. Do **not** do anything else.
+When this skill is invoked, the agent's job is **only** to prepare the itag and push the iticket to the repo at the working directory. Do **not** do anything else.
 
 1. **Check coherence** — confirm the summary is a coherent sentence (minor grammar/spelling fixes only). If the input is unintelligible, ask the user to rephrase. Do not investigate, explore, or expand.
 2. **Check the itag** — confirm the itag exists in the glossary `<itag>` section and as a GitHub label.
@@ -37,8 +39,6 @@ Extract **itag** and **summary** from the user's message (text after the skill i
 | `feature dark mode toggle` | `feature` | `dark mode toggle` |
 | `idea cache search results` | `idea` | `cache search results` |
 
-**Revise flag.** If the input contains the word `revise`, remove it before extracting the itag and summary, and set the revise flag. When the flag is set and the summary text was copied from `docs/wants.md` or `docs/questions.md`, delete that source text from the file after the iticket is created (see Step 5).
-
 If no itag or summary can be parsed, ask the user for both. Do not guess.
 
 **Coherence check.** The summary must read as a coherent sentence after light editing. If it does not, stop and ask the user to rephrase — do not guess intent or fill in missing context.
@@ -53,7 +53,6 @@ Task progress:
 - [ ] Step 2: Draft the iticket file
 - [ ] Step 3: Create the GitHub issue
 - [ ] Step 4: Link the issue back to the file
-- [ ] Step 5: Revise the source document (only if the revise flag is set)
 ```
 
 ### Step 2: Draft the iticket file
@@ -66,7 +65,7 @@ Create `.scratch/.itickets/<itag>` if it does not exist.
 
 ### Step 3: Create the GitHub issue
 
-After writing the document, create a GitHub issue with the `<itag>` label:
+After writing the document, create a GitHub issue on **this working directory's** remote with the `<itag>` label. Do not pass `--repo`, `-R`, or otherwise retarget `gh`.
 
 ```bash
 gh issue create --title "<issue title>" --body "<issue body>" --label <itag>
@@ -75,19 +74,15 @@ gh issue create --title "<issue title>" --body "<issue body>" --label <itag>
 - **Title:** short, derived from the summary (can match the 3-word filename theme).
 - **Body:** the polished `description` from the iticket file. Keep it brief — do not expand scope or add acceptance criteria unless the user provided them.
 - If the label does not exist, create it first (see [GitHub label](../ITICKET-FORMAT.md#github-label)).
+- **Repo lock:** create the issue only for the repo checked out at cwd. Never another repository.
 
 ### Step 4: Link the issue back to the file
 
 Add the `github-issue:` line to the iticket file per the [template](../ITICKET-FORMAT.md#template). Use the issue number or URL.
 
-### Step 5: Revise the source document
-
-Only run this step when the revise flag is set (the user included `revise`) **and** the summary text was copied from `docs/wants.md` or `docs/questions.md`.
-
-Delete the copied text from its source file, since the iticket now supersedes it. Remove only the specific line(s) or entry that was copied — do not touch unrelated content, and do not renumber or reformat the rest of the file. If you cannot confidently identify the source text in `docs/wants.md` or `docs/questions.md`, skip this step and report that the source was not revised.
-
 ## Constraints
 
+- **ONLY the working-directory repo.** You are NEVER allowed to create itickets for any repository other than the one at your current working directory. No `--repo` / `-R`, no other remotes, no sibling checkouts. If asked otherwise, refuse.
 - Every iticket MUST have exactly one itag. Never create an iticket without one.
 - **Never implement the ticket.** Do not write code, modify project source, run builds, pool the iticket, or take any action beyond filing the issue.
 - Do **not** investigate root cause, explore the codebase, or ask clarifying questions except when the summary is not a coherent sentence or the itag/summary cannot be parsed.
