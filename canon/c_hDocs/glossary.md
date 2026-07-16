@@ -9,16 +9,16 @@ iticket: an instance of a git issue that has an itag
 
 iPool: a document that contains a variably-structured list of thoughts, ideas, questions, and wants. Typically will live inside a lucidchart. Look at hDocs/remotes#lucidchart section to check for a remote iPool document.
 
-critical desire: lives in the fPool. Is a 2 sentence summary of the most important desire the piece of infrastructure will fufill. All wants in the 
+critical desire: lives in the fPool. Is a 2 sentence summary of the most important desire the piece of infrastructure will fulfill. All wants in the 
 
-critical question: a 2 sentence summary of the fundemental uncertainty that balances a critical desire
+critical question: a 2 sentence summary of the fundamental uncertainty that balances a critical desire
 
 </helmsman-terminology>
 <helmsman-version-control>
 
 hVersion: The official version of helmsman currently used in this hProject OR the last official version used in this hProject. hVersion can be checked by looking at .helmsman/hVersion.md which contains the hTag 
 
-hTag: the tag that indicates the hVersion. This matches an official canonical version found in the Helmsman github. The hTag will always be formatted vX.Y.Z and mathces a git tag.
+hTag: the tag that indicates the hVersion. This matches an official canonical version found in the Helmsman github. The hTag will always be formatted vX.Y.Z and matches a git tag.
 
 canonical version: an official helmsman release tagged on the github. These releases are finished, polished, and documented to offer a standardized starting point for new helmsman projects and a way to compare drift 
 in an individual hProject to a baseline.
@@ -29,11 +29,12 @@ in an individual hProject to a baseline.
 hlabel: stands for helmsman label. Uses colored emojis to mark certain ideas. [ ] 
 
 hLabels are available and [X] hLabels are taken. If an hLabel is taken, it needs to have
-a defined name and useage. 
+a defined name and usage. 
 
 </misc-features>
 </Terms>
 
+<iTags>
 bug: something that is broken or behaving incorrectly. marked with the bug tag on git issues
 
 quickssue: a quick, low-ceremony issue captured from casual input without deep investigation. marked with the quickssue tag on git issues
@@ -43,23 +44,23 @@ wonders: an open curiosity or "I wonder if..." question worth capturing for late
 </iTags>
 <hLabels>
 
-[ ]: 🔴 #EA4335, [label], [useage]
-[ ]: 🟠 #FF6D01, [label], [useage]
-[ ]: 🟡 #FBBC04, [label], [useage]
-[ ]: 🟢 #34A853, [label], [useage]
-[ ]: 🔵 #4285F4, [label], [useage]
-[ ]: 🟣 #9334E9, [label], [useage]
-[ ]: 🟤 #A14236, [label], [useage]
-[ ]: ⚫ #000000, [label], [useage]
-[ ]: ⚪ #FFFFFF, [label], [useage]
-[ ]: 🟥 #EA4335, [label], [useage]
-[ ]: 🟧 #FF6D01, [label], [useage]
-[ ]: 🟨 #FBBC04, [label], [useage]
-[ ]: 🟩 #34A853, [label], [useage]
-[ ]: 🟦 #4285F4, [label], [useage]
-[ ]: 🟪 #9334E9, [label], [useage]
-[ ]: 🟫 #A14236, [label], [useage]
-[ ]: ⬛ #000000, [label], [useage]
-[ ]: ⬜ #FFFFFF, [label], [useage]
+[ ]: 🔴 #EA4335, [label], [usage]
+[ ]: 🟠 #FF6D01, [label], [usage]
+[ ]: 🟡 #FBBC04, [label], [usage]
+[ ]: 🟢 #34A853, [label], [usage]
+[ ]: 🔵 #4285F4, [label], [usage]
+[ ]: 🟣 #9334E9, [label], [usage]
+[ ]: 🟤 #A14236, [label], [usage]
+[ ]: ⚫ #000000, [label], [usage]
+[ ]: ⚪ #FFFFFF, [label], [usage]
+[ ]: 🟥 #EA4335, [label], [usage]
+[ ]: 🟧 #FF6D01, [label], [usage]
+[ ]: 🟨 #FBBC04, [label], [usage]
+[ ]: 🟩 #34A853, [label], [usage]
+[ ]: 🟦 #4285F4, [label], [usage]
+[ ]: 🟪 #9334E9, [label], [usage]
+[ ]: 🟫 #A14236, [label], [usage]
+[ ]: ⬛ #000000, [label], [usage]
+[ ]: ⬜ #FFFFFF, [label], [usage]
 
 </hLabels>

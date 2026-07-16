@@ -15,8 +15,8 @@ AGENTS.md
 
 <instructions>
 
-Create the target-structure in the root of the repo. Place the appropriate tag in helmsman/hVersion.md 
+Create the target-structure in the root of the repo. Place the appropriate tag in .helmsman/hVersion.md 
 
-copy the contents of glossary, master, HELMSMAN.md, from c_hDocs ad-verbatim to the newly initialized docs. 
+copy the contents of glossary, master, HELMSMAN.md, from c_hDocs verbatim to the newly initialized docs. 
 
 </instructions>
