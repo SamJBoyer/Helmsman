@@ -7,6 +7,7 @@ hDocs/
     glossary.md
     master.md
     tempPool.md
+
 HELMSMAN.md
 AGENTS.md
 
@@ -14,10 +15,8 @@ AGENTS.md
 
 <instructions>
 
-artifacts, status, questions, wants, and .helmsman/.chronicle are empty by default.
+Create the target-structure in the root of the repo. Place the appropriate tag in helmsman/hVersion.md 
 
-.helmsman/hVersion.md 
-
-copy the contents of glossary, master, HELMSMAN.md, AGENTS.md, cursorignore, and overlay from helmsman_docs. 
+copy the contents of glossary, master, HELMSMAN.md, from c_hDocs ad-verbatim to the newly initialized docs. 
 
 </instructions>

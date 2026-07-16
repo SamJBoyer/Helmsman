@@ -1,5 +1,4 @@
 <Terms>
-
 <helmsman-terminology>
 
 hDocs: shorthand for helmsman documents. 
@@ -15,7 +14,6 @@ critical desire: lives in the fPool. Is a 2 sentence summary of the most importa
 critical question: a 2 sentence summary of the fundemental uncertainty that balances a critical desire
 
 </helmsman-terminology>
-
 <helmsman-version-control>
 
 hVersion: The official version of helmsman currently used in this hProject OR the last official version used in this hProject. hVersion can be checked by looking at .helmsman/hVersion.md which contains the hTag 
@@ -26,7 +24,6 @@ canonical version: an official helmsman release tagged on the github. These rele
 in an individual hProject to a baseline.
 
 </helmsman-version-control>
-
 <misc-features>
 
 hlabel: stands for helmsman label. Uses colored emojis to mark certain ideas. [ ] 
@@ -35,8 +32,6 @@ hLabels are available and [X] hLabels are taken. If an hLabel is taken, it needs
 a defined name and useage. 
 
 </misc-features>
-
-
 </Terms>
 
 bug: something that is broken or behaving incorrectly. marked with the bug tag on git issues
