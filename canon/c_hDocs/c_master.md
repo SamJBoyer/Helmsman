@@ -4,6 +4,18 @@ Fresh helmsman project
 
 </summary> 
 
+<artifacts>
+
+Initialized as empty.
+
+</artifacts>
+
+<drift>
+
+Initialized as empty 
+
+</drift>
+
 <overlay>
 
 This project was created with Helmsman. Read .helmsman/hVersion.md to see the canonical version tag 
@@ -12,6 +24,6 @@ This project was created with Helmsman. Read .helmsman/hVersion.md to see the ca
 
 <assumptions>
 
-NA
+Initialized as empty 
 
 </assumptions>

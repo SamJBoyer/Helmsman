@@ -38,9 +38,6 @@ a defined name and useage.
 
 
 </Terms>
----
-
-# iTags
 
 bug: something that is broken or behaving incorrectly. marked with the bug tag on git issues
 
@@ -48,9 +45,8 @@ quickssue: a quick, low-ceremony issue captured from casual input without deep i
 
 wonders: an open curiosity or "I wonder if..." question worth capturing for later exploration, not yet an idea or commitment. marked with the wonders tag on git issues
  
----
-
-# hLabels
+</iTags>
+<hLabels>
 
 [ ]: 🔴 #EA4335, [label], [useage]
 [ ]: 🟠 #FF6D01, [label], [useage]
@@ -71,4 +67,4 @@ wonders: an open curiosity or "I wonder if..." question worth capturing for late
 [ ]: ⬛ #000000, [label], [useage]
 [ ]: ⬜ #FFFFFF, [label], [useage]
 
---- 
+</hLabels>

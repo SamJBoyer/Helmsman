@@ -1,20 +1,14 @@
 <target-structure>
 
-.cursorignore
 .helmsman/
-    .chronicle/ 
     hVersion.md 
 hDocs/
     artifacts.md
     glossary.md
     master.md
-    overlay.md
-    questions.md
-    status.md
-    wants.md
+    tempPool.md
 HELMSMAN.md
 AGENTS.md
-jot.md
 
 </target-structure>
 
