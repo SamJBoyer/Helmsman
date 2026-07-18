@@ -3,7 +3,7 @@
 
 hDocs: shorthand for helmsman documents. 
 
-itags: itag stands for issue-tags. issue-tags refer to the tag in the repository git issues page. Helmsman makes heavy use of git issues as a cheap and accessible way to create tickets related to the project. As a result, there are many different tags used to designate which issues mean which thing. For example, issues may be marked as ideas, features, bugs, etc. itag may have shared definitions between projects and repo-unique definitions. The itag section is the ground truth for what each tag means, which tags are used, and when to use each tag.
+itags: itag stands for issue-tags. issue-tags refer to the tags in the repository git issues page. Helmsman makes heavy use of git issues as a cheap and accessible way to create tickets related to the project. As a result, there are many different tags used to designate which issues mean which thing. For example, issues may be marked as ideas, features, bugs, etc. itag may have shared definitions between projects and repo-unique definitions. The itag section is the ground truth for what each tag means, which tags are used, and when to use each tag.
 
 iticket: an instance of a git issue that has an itag
 
@@ -15,9 +15,9 @@ iPool: a document that contains a variably-structured list of thoughts, ideas, q
 
 hVersion: The official version of helmsman currently used in this hProject OR the last official version used in this hProject. hVersion can be checked by looking at .helmsman/hVersion.md which contains the hTag 
 
-hTag: the tag that indicates the hVersion. This matches an official canonical version found in the Helmsman github. The hTag will always be formatted vX.Y.Z and matches a git tag.
+hTag: the tag that indicates the hVersion. This matches an official canonical version found in the Helmsman GitHub. The hTag will always be formatted vX.Y.Z and matches a git tag.
 
-canonical version: an official helmsman release tagged on the github. These releases are finished, polished, and documented to offer a standardized starting point for new helmsman projects and a way to compare drift 
+canonical version: an official helmsman release tagged on the GitHub. These releases are finished, polished, and documented to offer a standardized starting point for new helmsman projects and a way to compare drift 
 in an individual hProject to a baseline.
 
 </helmsman-version-control>

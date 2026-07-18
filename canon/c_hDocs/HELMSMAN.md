@@ -2,11 +2,11 @@
 
 This is a Helmsman project.
 
-Helmsman is an idea-to-product development pipeline designed to facilitate collaboration between developers and agents. Helmsman follows an ideate -> prototype -> evaluate -> refactor system that starts with creating well robustly structured documents explaining desired-features, questions, internal definitions, multi-project connections, and version-control policies for this project. These documents live inside the hDocs/ folder. 
+Helmsman is an idea-to-product development pipeline designed to facilitate collaboration between developers and agents. Helmsman follows an ideate -> prototype -> evaluate -> refactor system that starts with creating robustly structured documents explaining desired-features, questions, internal definitions, multi-project connections, and version-control policies for this project. These documents live inside the hDocs/ folder. 
 
 Helmsman projects have a tag that tells which canonical version of the document they're using. Look in the .helmsman/hVersion.md for this version.
 
-Helmsman projects use a concept called iPool (idea pool) which is a collection of ideas, wants, desires, and implementations that represents a significant amount of the "purpose" for this hProject. The iPool may be stored in the hDocs/tempPool file in the repo, but is most often stored in a lucid chart. If the user asks for anything related to the iPool, first check the hDocs/remotes#lucidchart for instructions for accessing the iPool, then check hDocs/tempPool if no other alternative exists. 
+Helmsman projects use a concept called iPool (idea pool) which is a collection of ideas, wants, desires, and implementations that represents a significant amount of the "purpose" for this hProject. The iPool may be stored in the hDocs/tempPool file in the repo, but is most often stored in a lucidchart. If the user asks for anything related to the iPool, first check the hDocs/remotes#lucidchart for instructions for accessing the iPool, then check hDocs/tempPool if no other alternative exists. 
 
 </helmsman-summary>
 <repo-structure>
