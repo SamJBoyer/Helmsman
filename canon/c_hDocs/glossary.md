@@ -9,9 +9,6 @@ iticket: an instance of a git issue that has an itag
 
 iPool: a document that contains a variably-structured list of thoughts, ideas, questions, and wants. Typically will live inside a lucidchart. Look at hDocs/remotes#lucidchart section to check for a remote iPool document.
 
-critical desire: lives in the fPool. Is a 2 sentence summary of the most important desire the piece of infrastructure will fulfill. All wants in the 
-
-critical question: a 2 sentence summary of the fundamental uncertainty that balances a critical desire
 
 </helmsman-terminology>
 <helmsman-version-control>
@@ -24,14 +21,6 @@ canonical version: an official helmsman release tagged on the github. These rele
 in an individual hProject to a baseline.
 
 </helmsman-version-control>
-<misc-features>
-
-hlabel: stands for helmsman label. Uses colored emojis to mark certain ideas. [ ] 
-
-hLabels are available and [X] hLabels are taken. If an hLabel is taken, it needs to have
-a defined name and usage. 
-
-</misc-features>
 </Terms>
 
 <iTags>
@@ -42,25 +31,3 @@ quickssue: a quick, low-ceremony issue captured from casual input without deep i
 wonders: an open curiosity or "I wonder if..." question worth capturing for later exploration, not yet an idea or commitment. marked with the wonders tag on git issues
  
 </iTags>
-<hLabels>
-
-[ ]: 🔴 #EA4335, [label], [usage]
-[ ]: 🟠 #FF6D01, [label], [usage]
-[ ]: 🟡 #FBBC04, [label], [usage]
-[ ]: 🟢 #34A853, [label], [usage]
-[ ]: 🔵 #4285F4, [label], [usage]
-[ ]: 🟣 #9334E9, [label], [usage]
-[ ]: 🟤 #A14236, [label], [usage]
-[ ]: ⚫ #000000, [label], [usage]
-[ ]: ⚪ #FFFFFF, [label], [usage]
-[ ]: 🟥 #EA4335, [label], [usage]
-[ ]: 🟧 #FF6D01, [label], [usage]
-[ ]: 🟨 #FBBC04, [label], [usage]
-[ ]: 🟩 #34A853, [label], [usage]
-[ ]: 🟦 #4285F4, [label], [usage]
-[ ]: 🟪 #9334E9, [label], [usage]
-[ ]: 🟫 #A14236, [label], [usage]
-[ ]: ⬛ #000000, [label], [usage]
-[ ]: ⬜ #FFFFFF, [label], [usage]
-
-</hLabels>

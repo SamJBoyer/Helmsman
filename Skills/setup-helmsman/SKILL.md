@@ -1,57 +1,89 @@
 ---
 name: setup-helmsman
-description: Scaffold a new Helmsman project by following a helmsman setup from a canonical helmsman version. 
+description: Scaffold a new Helmsman project by cloning the Helmsman remote at the latest tag and seeding hDocs from canon.
 disable-model-invocation: true
 ---
 
 # Setup Helmsman
 
-Scaffold the Helmsman document structure for a project. Ground truth: [canon-lnk/instructions/init_helmsman.md](canon-lnk/instructions/init_helmsman.md).
+Scaffold the Helmsman document structure for a project from the canonical Helmsman repo: https://github.com/SamJBoyer/Helmsman.git
 
-`canon-lnk` is a junction to the Helmsman canon. Read and copy seeded docs from there; do not read from `canon/` directly.
+Ground truth for layout: after checkout, read `Helmsman/canon/instructions/init_helmsman.md`.
 
 ## Workflow
 
 ```
 Task progress:
-- [ ] Step 1: Read init_helmsman.md and execute instructions in the new repo to create the repo structure
-- [ ] Step 2: Copy seeded docs from canon-lnk
-- [ ] Step 3: Create the remaining docs as empty files
+- [ ] Step 1: Clone Helmsman remote, check out the most recent tag, and read init_helmsman.md
+- [ ] Step 2: Seed hDocs via seed-hdocs script (deletes the clone)
+- [ ] Step 3: Finish remaining init from init_helmsman.md
 - [ ] Step 4: Report what was created or skipped
 ```
 
-### Step 1: Read init_helmsman.md
+### Step 1: Clone Helmsman and check out the latest tag
 
-Read [canon-lnk/instructions/init_helmsman.md](canon-lnk/instructions/init_helmsman.md) for the directory layout and which files get content vs stay empty. Create the document structure as outlined
-in init_helmsman.md
+From the **target project root**:
 
-### Step 2: Copy seeded docs from canon-lnk
+```bash
+git clone https://github.com/SamJBoyer/Helmsman.git Helmsman
+cd Helmsman
+git fetch --tags
+LATEST_TAG=$(git tag -l --sort=-v:refname | head -n 1)
+git checkout "$LATEST_TAG"
+cd ..
+```
 
-Copy these **verbatim** from [canon-lnk/c_hDocs/](canon-lnk/c_hDocs/):
+PowerShell equivalent:
 
-| Canon source | Destination |
-|--------------|-------------|
-| `c_glossary.md` | `hDocs/glossary.md` |
-| `c_master.md` | `hDocs/master.md` |
-| `c_HELMSMAN.md` | `HELMSMAN.md` (repo root) |
-| `c_AGENTS.md` | `AGENTS.md` (repo root) |
+```powershell
+git clone https://github.com/SamJBoyer/Helmsman.git Helmsman
+Set-Location Helmsman
+git fetch --tags
+$LatestTag = (git tag -l --sort=-v:refname | Select-Object -First 1)
+git checkout $LatestTag
+Set-Location ..
+```
 
-### Step 3: Create empty docs
+If `Helmsman/` already exists, fetch tags and check out the latest tag instead of recloning. Do not overwrite an existing checkout without asking.
 
-Create `hDocs/` if needed, then create these as **empty** files:
+**Before seeding**, read `Helmsman/canon/instructions/init_helmsman.md` (the seed script deletes the clone). Record the checked-out tag (e.g. in `.helmsman/hVersion.md` per that file).
 
-- `hDocs/artifacts.md`
-- `hDocs/overlay.md`
-- `hDocs/questions.md`
-- `hDocs/status.md`
-- `hDocs/wants.md`
+### Step 2: Seed hDocs
+
+Run the seed script from the **target project root**. Prefer the script matching the shell:
+
+**PowerShell**
+
+```powershell
+& "Skills/setup-helmsman/scripts/seed-hdocs.ps1"
+```
+
+**Bash**
+
+```bash
+bash Skills/setup-helmsman/scripts/seed-hdocs.sh
+```
+
+If this skill lives outside the target repo, pass the absolute path to the script. Optional args: Helmsman dir name (default `Helmsman`), then project root (default cwd).
+
+The script:
+
+1. Copies `Helmsman/canon/c_hDocs/` → `hDocs/` at the project root
+2. Moves `hDocs/HELMSMAN.md` → `HELMSMAN.md` at the project root
+3. Deletes the `Helmsman/` clone
+
+It refuses to overwrite an existing `hDocs/` or root `HELMSMAN.md`.
+
+### Step 3: Finish remaining init
+
+Using `init_helmsman.md` from Step 1, create any remaining target-structure paths that Step 2 did not produce (e.g. `.helmsman/`, empty docs, `AGENTS.md`). Do **not** overwrite files that already exist.
 
 ### Step 4: Report
 
-List every file created and every file skipped because it already existed.
+List every file created and every file skipped because it already existed. Include the Helmsman tag that was checked out.
 
 ## Constraints
 
 - Do **not** overwrite a file that already exists. Skip it and report it as skipped.
-- Only the seeded files above get starting content. Every other doc MUST be created empty.
-- Do not invent additional docs beyond [init_helmsman.md](canon-lnk/instructions/init_helmsman.md).
+- Seed content comes only from the tagged `canon/c_hDocs` via the seed script.
+- Do not invent additional docs beyond `init_helmsman.md`.

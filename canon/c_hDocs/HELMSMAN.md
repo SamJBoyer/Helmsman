@@ -54,7 +54,6 @@ High-level explanation document that contains:
 - artifacts: work, features, content from abandoned attempts that might dirty the workspace. Previous significant changes stored in a log. This should be used when weird behavior emerges or it’s unclear why an architectural decision was made, as it might be an artifact from a previous version. This document should be used before looking at git history 
 - drift: This document explains where the project currently is from the perspective of the developer. This document is an important truth control that bridges what the project should do in the documents and the state of the actual code. Documents are aspirational and upward facing. We always write in our documents what should happen and what should be the case. The code is what’s actually the case. Oftentimes the developer knows that the reality of the code doesn’t match the aspirations of the docs. status is a document to make explicit what the developer actually thinks about the code and what they view as the next steps to convert the reality of the code into the aspirations of the docs
 - overlay: Explains which other projects are important to this one and how they interact at a high level 
-- 
 
 </master>
 <tempPool>
